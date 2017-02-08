@@ -1,0 +1,3 @@
+# ignore files
+#不要上传系统生成的日志，缓存等
+/App/Runtime/
