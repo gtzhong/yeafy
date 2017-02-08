@@ -1,0 +1,219 @@
+﻿/*轮播图*/
+#BgPicList{ width:100%; height:610px; overflow:hidden; position:relative; }
+#BgPicList .piclist_c{ position:absolute; width:100%; height:609px; left:0; top:0; z-index:50;}
+#BgPicList .piclist_c .pic_li{ width:100%; height:100%; text-align:center; position:absolute; z-index:100; display:none; }
+#BgPicList .piclist_kuai{ position:absolute; width:1620px; left:50%; margin-left:-810px; z-index:500; height:50px; bottom:0;}
+#BgPicList .piclist_l{  position:absolute; left:0; top:40%; z-index:500;}
+#BgPicList .piclist_a{ font-size:20px; position:absolute; width:100%; bottom:16px; left:0; text-align:center; z-index:500;}
+#BgPicList .piclist_a a{ width:8px; height:8px; background:#fff; border-radius:4px; display:inline-block; margin:0 6px; transition:all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; cursor:pointer;}
+#BgPicList .piclist_a a.one{ width:30px; height:8px;}
+/*#BgPicList .piclist_load{ position:absolute; left:0; top:0; z-index:800; background:url(../images/lbt_1_4.jpg) no-repeat center #FFF; width:100%; height:100%;}*/
+/*#BgPicList .piclist_load2{ position:absolute; left:0; top:0; background:url(../images/loading11.gif) center no-repeat #2c3e50; width:100%; height:100%;}*/
+
+
+/*#BgPicList .more{ width:153px; height:44px; background:url(../images/more.png) repeat-x; border:1px solid #fff; color:#fff; display:block; text-align:center; line-height:44px; margin-top:15px;}*/
+#BgPicList .more{ transition:all 0.3s;-webkit-transition:all 0.3s ;}
+#BgPicList .more:hover{ background:#fff; color:#252E35; cursor:pointer;}
+
+
+#BgPicList .li_con{ width:1002px; height:610px; position:relative; margin:0 auto;}
+
+#BgPicList .piclist_c .pic_li1{ display:block;}
+
+#BgPicList .pic_li1 .ipad{ position:absolute; left:-200px; top:165px; opacity:0; filter: Alpha(opacity=0); transition:all 1s;}
+#BgPicList .pic_li1 .haitun1{ position:absolute; left:230px; top:148px; opacity:0; filter: Alpha(opacity=0); transition:all 1s;}
+#BgPicList .pic_li1 .haitun2{ position:absolute; left:305px; top:320px; opacity:0; filter: Alpha(opacity=0); transition:all 1s;}
+#BgPicList .pic_li1 .txt{ position:absolute; top:350px; left:780px; opacity:0; filter: Alpha(opacity=0); transition:all 1s 0.5s;}
+
+#BgPicList .pic_li1.li_an .ipad{  left:-150px; top:115px; opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li1.li_an .haitun1{ left:330px; top:148px; opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li1.li_an .haitun2{ left:205px; top:320px; opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li1.li_an .txt{ top:350px; left:680px; opacity:1; filter: Alpha(opacity=100);}
+
+#BgPicList .pic_li2 .li_logo{ position:absolute; top:103px; left:395px; transform:scale(0,0); transition:all 0.8s 0.5s ease;}
+#BgPicList .pic_li2 .txt{ position:absolute; top:220px; left:308px; transform:scale(0,0); transition:all 0.8s 0.9s ease; z-index:1000;}
+#BgPicList .pic_li2 .more{ margin-left:115px;}
+#BgPicList .pic_li2 .shan1_1{ position:absolute; width:0; height:318px; bottom:0; left:75px; transition:all 1.5s 1s; overflow:hidden;}
+#BgPicList .pic_li2 .shan1_1 img{ position:absolute; left:0; bottom:0; width:880px;}
+#BgPicList .pic_li2 .shan1_2{ position:absolute; width:880px; bottom:0; left:75px; opacity:0; filter: Alpha(opacity=0); transition:all 1.5s;}
+#BgPicList .pic_li2 .shan2_1{ position:absolute; width:0; height:176px; bottom:0; left:612px; transition:all 1s 1.5s; overflow:hidden;}
+#BgPicList .pic_li2 .shan2_1 img{ position:absolute; left:0; bottom:0; width:485px;}
+#BgPicList .pic_li2 .shan2_2{ position:absolute; width:485px; bottom:0; left:612px; opacity:0; filter: Alpha(opacity=0); transition:all 1s 0.5s;}
+#BgPicList .pic_li2 .btn{ position:absolute;}
+#BgPicList .pic_li2 .yun{ position:absolute; }
+#BgPicList .pic_li2 .yun1{ width:110px; left:-160px; top:60px; animation:yun 16s infinite; -webkit-animation:-webkit-yun 16s infinite; opacity:0; filter: Alpha(opacity=0); transition:all 1s 0.6s;}
+#BgPicList .pic_li2 .yun1 .btn{ left:28px; top:30px;}
+#BgPicList .pic_li2 .yun2{ width:252px; left:-50px; top:170px; animation:yun 12s infinite; -webkit-animation:-webkit-yun 12s infinite; opacity:0; filter: Alpha(opacity=0); transition:all 1s;}
+#BgPicList .pic_li2 .yun2 .btn{ left:148px; top:60px;}
+#BgPicList .pic_li2 .yun3{ width:190px; left:745px; top:367px; animation:yun 14s infinite; -webkit-animation:-webkit-yun 14s infinite; opacity:0; filter: Alpha(opacity=0); transition:all 1s 0.6s;}
+#BgPicList .pic_li2 .yun3 .btn{ left:42px; top:47px;}
+#BgPicList .pic_li2 .yun4{ width:103px; left:853px; top:176px; animation:yun 16s infinite; -webkit-animation:-webkit-yun 16s infinite; opacity:0; filter: Alpha(opacity=0); transition:all 1s 0.9s;}
+#BgPicList .pic_li2 .yun4 .btn{ left:57px; top:25px;}
+#BgPicList .pic_li2 .yun5{ width:193px; left:1002px; top:180px; animation:yun 15s infinite; -webkit-animation:-webkit-yun 15s infinite; opacity:0; filter: Alpha(opacity=0); transition:all 1s 0.3s;}
+#BgPicList .pic_li2 .yun5 .btn{ left:112px; top:45px;}
+
+#BgPicList .pic_li2.li_an .li_logo{ transform:scale(1,1);}
+#BgPicList .pic_li2.li_an .txt{ transform:scale(1,1);}
+#BgPicList .pic_li2.li_an .shan1_1{ position:absolute; width:880px;}
+#BgPicList .pic_li2.li_an .shan1_2{ position:absolute; width:880px; opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li2.li_an .shan2_1{ position:absolute; width:485px;}
+#BgPicList .pic_li2.li_an .shan2_2{ position:absolute; width:485px; opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li2.li_an .yun1{ opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li2.li_an .yun2{ opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li2.li_an .yun3{ opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li2.li_an .yun4{ opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li2.li_an .yun5{ opacity:1; filter: Alpha(opacity=100);}
+
+@keyframes yun{
+	0%{ transform:translateX(0);}
+	20%{ transform:translateX(10px);}
+	40%{ transform:translateX(-10px);}
+	60%{ transform:translateX(15px);}
+	80%{ transform:translateX(-15px);}
+	100%{ transform:translateX(0);}
+}
+
+@-webkit-keyframes -webkit-yun{
+	0%{ -webkit-transform:translateX(0);}
+	20%{ -webkit-transform:translateX(10px);}
+	40%{ -webkit-transform:translateX(-10px);}
+	60%{ -webkit-transform:translateX(15px);}
+	80%{ -webkit-transform:translateX(-15px);}
+	100%{ -webkit-transform:translateX(0);}
+}
+
+/*#BgPicList .pic_li3{background:url(../images/lbt_3_1.jpg) no-repeat center;}*/
+#BgPicList .pic_li3 .pingmu{ position:absolute; left:119px; top:150px; opacity:1; filter: Alpha(opacity=100);  overflow:hidden; width:444px; height:278px; display:none;}
+#BgPicList .pic_li3 .pingmu img{ position:absolute; left:0; top:0;}
+#BgPicList .pic_li3 .shou{ position:absolute; top:165px; left:488px;opacity:0; filter: Alpha(opacity=0); transition:all 1s;}
+#BgPicList .pic_li3 .txt{ position:absolute; top:200px; left:562px; width:0; height:154px; transition:all 1s 0.5s; overflow:hidden;}
+#BgPicList .pic_li3 .txt img{ position:absolute; left:0; top:0; width:440px;}
+#BgPicList .pic_li3 .txt .more{ position:absolute; right:0; top:91px;}
+
+#BgPicList .pic_li3.li_an .shou{ top:65px; left:388px;opacity:1; filter: Alpha(opacity=100);}
+#BgPicList .pic_li3.li_an .txt{ width:440px;}
+
+#BgPicList2{ width:100%; height:210px; overflow:hidden; position:relative; display:none;}
+#BgPicList2 .piclist_c{ position:absolute; width:100%; height:210px; left:0; top:0; z-index:50;}
+#BgPicList2 .piclist_c .pic_li{ width:100%; height:100%; text-align:center; position:absolute; z-index:100; display:none; }
+#BgPicList2 .piclist_kuai{ position:absolute; width:1620px; left:50%; margin-left:-810px; z-index:500; height:50px; bottom:0;}
+#BgPicList2 .piclist_l{  position:absolute; left:0; top:40%; z-index:500;}
+#BgPicList2 .piclist_a{ font-size:20px; position:absolute; width:100%; bottom:40px; left:0; text-align:center; z-index:500;}
+#BgPicList2 .piclist_a a{ width:8px; height:8px; background:#fff; border-radius:4px; display:inline-block; margin:0 6px; transition:all 0.3s ease-in; -webkit-transition:all 0.3s ease-in; cursor:pointer;}
+/*#BgPicList2 .piclist_load{ position:absolute; left:0; top:0; z-index:800; background:url(../images/lbt_1_4.jpg) no-repeat center #FFF; width:100%; height:100%;}*/
+/*#BgPicList2 .piclist_load2{ position:absolute; left:0; top:0; background:url(../images/loading2.gif) center no-repeat; width:100%; height:100%;}*/
+#BgPicList2 .piclist_a a.one{ width:30px; height:8px;}
+/*#BgPicList2 .txt{ height:30x; line-height:30px; color:#fff; background:#f7f7f6; padding:0 5%; margin:0; background:url(../images/iphone_ic.png) repeat; position:absolute; bottom:0; left:0; width:90%;}*/
+#BgPicList2 .img{background-size:cover; height:210px;}
+
+
+
+/*pad端*/
+@media screen and (max-width: 1200px) {
+#BgPicList{ height:450px;}
+#BgPicList .piclist_c{ height:450px; }
+#BgPicList .li_con{ width:90%; height:450px;}
+
+#BgPicList .pic_li1.li_an .ipad{  left:-100px; top:50px; opacity:1; filter: Alpha(opacity=100); width:85%}
+#BgPicList .pic_li1.li_an .haitun1{ left:40%; top:20%; opacity:1; filter: Alpha(opacity=100); width:50%;}
+#BgPicList .pic_li1.li_an .haitun2{ left:15%; top:40%; opacity:1; filter: Alpha(opacity=100); width:30%;}
+#BgPicList .pic_li1 .haitun2{ left:25%; top:50%;}
+#BgPicList .pic_li1.li_an .txt{ top:250px; left:auto; right:0; opacity:1; filter: Alpha(opacity=100);}
+
+#BgPicList .pic_li2 .li_logo{ left:50%; margin-left:-108px; top:50px;}
+#BgPicList .pic_li2 .txt{ left:50%; margin-left:-190px; top:150px;}
+#BgPicList .pic_li2 .shan1_1{ left:7%}
+#BgPicList .pic_li2 .shan1_2{ left:7%}
+#BgPicList .pic_li2 .shan2_1{ left:60%}
+#BgPicList .pic_li2 .shan2_2{ left:60%}
+#BgPicList .pic_li2 .yun_bg{ transform:scale(0.7,0.7);}
+#BgPicList .pic_li2 .yun1{ left:0; top:60px;}
+#BgPicList .pic_li2 .yun2{ left:-5%; top:200px;}
+#BgPicList .pic_li2 .yun3{left:50%; top:330px;}
+#BgPicList .pic_li2 .yun4{ left:75%; top:76px;}
+#BgPicList .pic_li2 .yun5{ left:80%; top:200px;}
+
+#BgPicList .pic_li3{ background-size:auto 100%;}
+#BgPicList .pic_li3 .li_con{ width:760px;}
+#BgPicList .pic_li3 .pingmu{ left:-3px; top:72px;}
+#BgPicList .pic_li3 .shou{ left:500px; }
+#BgPicList .pic_li3.li_an .shou{ transform:scale(0.7,0.7); left:300px;}
+#BgPicList .pic_li3 .txt{ top:70px; right:20px; left:auto;}
+
+}
+
+/*手机横*/
+@media screen and (max-width: 758px){
+#BgPicList{ height:300px;}
+#BgPicList .piclist_c{ height:300px; }
+#BgPicList .li_con{ width:100%; height:300px;}
+#BgPicList .piclist_a a.one{ width:18px;}
+
+#BgPicList .pic_li1.li_an .ipad{ left:-100px; top:0; width:110%}
+#BgPicList .pic_li1 .haitun1{ left:20%; top:30%;}
+#BgPicList .pic_li1 .haitun2{left:20%; top:60%; }
+#BgPicList .pic_li1.li_an .haitun1{ left:30%; top:20%; opacity:1; filter: Alpha(opacity=100); width:55%;}
+#BgPicList .pic_li1.li_an .haitun2{ left:10%; top:50%; opacity:1; filter: Alpha(opacity=100); width:35%;}
+#BgPicList .pic_li1 .txt{ top:180px; right:-100px; transform:scale(0.7,0.7)}
+#BgPicList .pic_li1.li_an .txt{ top:130px; left:auto; right:-40px;}
+
+#BgPicList .pic_li2.li_an .li_logo{ width:150px; margin-left:-75px;}
+#BgPicList .pic_li2.li_an .txt{ transform:scale(0.7,0.7); top:100px;}
+#BgPicList .pic_li2 .shan1_1{ left:0; height:217px;}
+#BgPicList .pic_li2 .shan1_2{ left:0; height:217px; width:600px;}
+#BgPicList .pic_li2 .shan2_1{ left:50%; height:108px;}
+#BgPicList .pic_li2 .shan2_2{ left:50%;  height:108px; width:300px;}
+#BgPicList .pic_li2.li_an .shan1_1{ width:600px;}
+#BgPicList .pic_li2.li_an .shan1_2{ width:600px;}
+#BgPicList .pic_li2.li_an .shan2_1{ width:300px;}
+#BgPicList .pic_li2.li_an .shan2_2{ width:300px;}
+#BgPicList .pic_li2 .shan1_1 img{ width:600px;}
+#BgPicList .pic_li2 .shan2_1 img{ width:300px;}
+#BgPicList .pic_li2 .yun_bg{ transform:scale(0.5,0.5);}
+#BgPicList .pic_li2 .yun1{ left:0; top:20px;}
+#BgPicList .pic_li2 .yun2{ left:-5%; top:150px;}
+#BgPicList .pic_li2 .yun3{left:50%; top:200px;}
+#BgPicList .pic_li2 .yun4{ left:75%; top:56px;}
+#BgPicList .pic_li2 .yun5{ left:75%; top:100px;}
+
+#BgPicList .pic_li3{ background-size:auto 300px;}
+#BgPicList .pic_li3 .li_con{ width:480px;}
+#BgPicList .pic_li3 .pingmu{ left:50px; top:72px; width:220px; height:140px;}
+#BgPicList .pic_li3.li_an .pingmu img{}
+#BgPicList .pic_li3 .shou{ left:200px; top:100px; transform:scale(0.5,0.5);}
+#BgPicList .pic_li3.li_an .shou{ transform:scale(0.5,0.5); left:50px;top:-50px;}
+#BgPicList .pic_li3 .txt{ top:30px; right:0; left:auto; transform:scale(0.6,0.6);}
+
+}
+
+/*手机竖*/
+@media screen and (max-width: 470px){
+#BgPicList{ height:200px; display:none;}
+#BgPicList2{ display:block;}
+#BgPicList .piclist_c{ height:200px;}
+#BgPicList .piclist_a{ bottom:10px;}
+#BgPicList .li_con{ width:100%; height:200px;}
+
+#BgPicList .pic_li1 .txt{ top:auto; bottom:20px; left:100%; right:auto; transform:scale(0.8,0.8)}
+#BgPicList .pic_li1.li_an .txt{ top:auto; left:-20px; right:auto;}
+
+#BgPicList .pic_li2.li_an .li_logo{ top:20px;}
+#BgPicList .pic_li2 .txt{ margin-left:-125px; width:250px; transform:scale(0.7,0.7);}
+#BgPicList .pic_li2 .more{ width:80px; height:30px; line-height:30px; margin-left:80px; margin-top:5px;}
+#BgPicList .pic_li2.li_an .txt{ transform:scale(1,1); top:80px;}
+#BgPicList .pic_li2 .yun_bg{ transform:scale(0.3,0.3);}
+#BgPicList .pic_li2 .yun1{ left:-5%; top:20px;}
+#BgPicList .pic_li2 .yun2{ left:-28%; top:90px;}
+#BgPicList .pic_li2 .yun3{left:50%; top:110px;}
+#BgPicList .pic_li2 .yun4{ left:70%; top:20px;}
+#BgPicList .pic_li2 .yun5{ left:70%; top:70px;}
+
+#BgPicList .pic_li3{ background-size:auto 200px;}
+#BgPicList .pic_li3 .li_con{ width:320px;}
+#BgPicList .pic_li3 .pingmu{ left:35px; top:50px; width:144px; height:90px;}
+#BgPicList .pic_li3 .shou{ left:200px; top:100px; transform:scale(0.5,0.5);}
+#BgPicList .pic_li3.li_an .shou{ transform:scale(0.4,0.4); left:-80px;top:-120px;}
+#BgPicList .pic_li3 .txt{ top:10px; right:10px; left:auto; transform:scale(1,1); width:0;}
+#BgPicList .pic_li3 .txt img{  width:300px;}
+#BgPicList .pic_li3.li_an .txt{ width:300px;}
+}
