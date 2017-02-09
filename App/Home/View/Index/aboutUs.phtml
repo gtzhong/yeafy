@@ -2,22 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
-    <title>北京网站建设,北京网站设计,北京网页设计,响应式网站建设-北京上云-获奖的北京网站建设公司</title>
+    <title>深圳网站建设,深圳网站设计,深圳网页设计,响应式网站建设-深圳跃飞-获奖的深圳网站建设公司</title>
     <meta name="Keywords" content="#">
     <meta name="Description" content="#">
 
-    <link rel="stylesheet" type="text/css" href="<?php echo C('f-css');?>/aboutUs.css">
-    <link rel="stylesheet" type="text/css" href="<?php echo C('f-css');?>/top_css.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo C('f-css');?>/css.css">
 <body style="background:#FFF;">
 <div class="head">
     <a href="#" class="logo"><img src="<?php echo C('f-img');?>/logo.png"></a>
     <div class="nav">
-        <a href="../index/index.html">首页</a><a href="#">案例</a><a href="#">我们</a><a href="#">联系</a>
+        <?php foreach ($menu as $k=>$v):?>
+            <a href="<?php echo U($v['url']);?>"><?php echo $v['text'];?></a>
+        <?php endforeach;?>
     </div>
     <div class="phone"><b><img src="<?php echo C('f-img');?>/phone.png" alt="做网站:18929329587"></b><span id="phone1">18929329587</span></div>
 
 </div>
-<div class="gywm_top">上云，不止是一家网站建设公司<span>我们信仰并一直坚持，为客户打造真正有价值的互联网平台</span></div>
+<div class="gywm_top">跃飞，不止是一家网站建设公司<span>我们信仰并一直坚持，为客户打造真正有价值的互联网平台</span></div>
 <div class="gywm_ln">
     <div class="ln_r">
         <div class="span1">产品<br>能力积累</div>
@@ -26,7 +27,7 @@
     </div>
     <div class="ln_l">
         <h3>我们的理念</h3>
-        <div class="txt">早在1998年，我们就开始设计网站。<br>18年来，北京上云科技发展有限公司追求并一直坚持，为客户打造适合的真正有价值的互联网平台。 <br>认真聆听客户的思想，追求在战略理解上与客户同步；精心制定落地的计划，雕琢每一个面向用户的细节。 <br>我们对网站策划、用户体验与互动、视觉传达、前后台应用系统、国际化标准和流行趋势、进行不断的研究和实践，拥有丰富的经验和理念。</div>
+        <div class="txt">早在2009年，我们就开始设计网站。<br>8年来，深圳跃飞科技有限公司追求并一直坚持，为客户打造适合的真正有价值的互联网平台。 <br>认真聆听客户的思想，追求在战略理解上与客户同步；精心制定落地的计划，雕琢每一个面向用户的细节。 <br>我们对网站策划、用户体验与互动、视觉传达、前后台应用系统、国际化标准和流行趋势、进行不断的研究和实践，拥有丰富的经验和理念。</div>
     </div>
 </div>
 <div class="gywm_tu"></div>
@@ -72,7 +73,7 @@
 <div class="gywm_san">
     <div class="san_c san_c1">
         <div class="san_t"></div>
-        <div class="txt">早在1998年，我们就开始设计网站。18年来，我们追求并一直坚持，为客户打造适合的真正有价值的互联网平台。 </div>
+        <div class="txt">早在2009年，我们就开始设计网站。8年来，我们追求并一直坚持，为客户打造适合的真正有价值的互联网平台。 </div>
     </div>
     <div class="san_c san_c2">
         <div class="san_t"></div>
@@ -85,6 +86,6 @@
     <div class="clear"></div>
 </div>
 <div class="clear"></div>
-<?php include '/App/Home/View/Layout/footer.phtml';?>
+<?php include "/App/Home/View/Layout/footer.phtml";?>
 </body>
 </html>

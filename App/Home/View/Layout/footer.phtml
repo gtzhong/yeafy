@@ -1,19 +1,17 @@
 <!--照片-->
 <div class="Photo">
     <ul>
-        <li class="iphone_none"><img src="<?php echo C('f-img');?>/10495620032f52692-9.jpg" alt="#"></li>
-        <li class="iphone_none"><img src="<?php echo C('f-img');?>/10495620032f52692-9.jpg" alt="#"></li>
-        <li class="iphone_none"><img src="<?php echo C('f-img');?>/10495620032f52692-9.jpg" alt="#"></li>
-        <li class="iphone_none"><img src="<?php echo C('f-img');?>/10495620032f52692-9.jpg" alt="#"></li>
+        <?php
+        foreach ($companyPhoto as $v):?>
+        <li class="iphone_none"><img src="<?php echo C('f-img');?>/<?php echo $v;?>" alt="#"></li>
+        <?php endforeach;?>
     </ul>
 </div>
 <!--底部-->
 <div class="foot">
     <p>
-    <div class="f-logo">跃飞</div>
-<!--        <img class="b_logo" src="--><?php //echo C('f-img');?><!--/1050441955f756c94-d.jpg">-->
-    <b id="phone3">18929329587</b><em>深圳市跃飞科技有限公司，是专注于高端定制的中国网站设计公司<br>
-        具有8年建站经验的深圳网页设计公司，最早注重响应式网站建设的深圳网站建设公司</em></p>
+        <img class="b_logo" src="<?php echo C('f-img');?>/footer_logo.jpg"> <b id="phone3">18929329587</b><em>深圳市跃飞科技有限公司，是专注于高端定制的中国网站设计公司<br>
+            具有8年建站经验的深圳网页设计公司，最早注重响应式网站建设的深圳网站建设公司</em></p>
     <div class="bq">
         <i>地址：深圳市龙华新区大浪街道工业园路凯豪达广场A座8楼</i><i>Copyright © yeafy.com 2009-2017,All Rights Reserved</i></div>
 </div>

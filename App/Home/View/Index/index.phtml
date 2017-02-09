@@ -1,18 +1,17 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
-<title>深圳网站建设,深圳网站设计,深圳网页设计,响应式网站建设-跃飞科技</title>
-<meta name="Keywords" content="">
-<meta name="Description" content="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+	<title>深圳网站建设,深圳网站设计,深圳网页设计,响应式网站建设-跃飞科技</title>
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
 
-<link rel="stylesheet" type="text/css" href="<?php echo C('f-css');?>/css.css">
-<link rel="stylesheet" type="text/css" href="<?php echo C('f-css');?>/index_banner.css">
-<link rel="stylesheet" href="<?php echo C('f-css');?>/responsiveslides.css">
-<link rel="stylesheet" href="<?php echo C('f-css');?>/demo.css">
-<script src="<?php echo C('f-js');?>/jquery-1.10.1.min.js"></script>
-<script src="<?php echo C('f-js');?>/responsiveslides.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo C('f-css');?>/css.css">
+	<link rel="stylesheet" href="<?php echo C('f-css');?>/responsiveslides.css">
+	<link rel="stylesheet" href="<?php echo C('f-css');?>/banner.css">
+	<script src="<?php echo C('f-js');?>/jquery-1.10.1.min.js"></script>
+	<script src="<?php echo C('f-js');?>/responsiveslides.min.js"></script>
 	<script>
 		$(function () {
 			$("#slider4").responsiveSlides({
@@ -34,479 +33,225 @@
 <link rel="stylesheet" type="text/css" href="<?php echo C('f-css');?>/top_css.css">
 <!--顶部-->
 <div class="head">
-<a href="javascript:void(0);" class="logo"><img src="<?php echo C('f-img');?>/logo.png"></a>
-<div class="nav">
-<a href="javascript:void(0);">首页</a><a href="javascript:void(0);">案例</a><a href="../aboutus/aboutus.html">我们</a><a href="javascript:void(0);">联系</a>
-</div>
-<div class="phone"><b><img src="<?php echo C('f-img');?>/phone.png" alt="#"></b><span id="phone1">18929329587</span></div>
+	<a href="javascript:void(0);" class="logo"><img src="<?php echo C('f-img');?>/logo.png"></a>
+	<div class="nav">
+		<?php foreach ($menu as $k=>$v):?>
+		<a href="<?php echo U($v['url']);?>"><?php echo $v['text'];?></a>
+		<?php endforeach;?>
+	</div>
+	<div class="phone"><b><img src="<?php echo C('f-img');?>/phone.png" alt="#"></b><span id="phone1">18929329587</span></div>
 </div>
 <div class="callbacks_container">
 	<ul class="rslides" id="slider4">
 		<li>
-			<img src="<?php echo C('f-img');?>/1.jpg" alt="">
+			<a href="" target="_blank"><img src="<?php echo C('f-img');?>/1.jpg" alt=""></a>
 			<p class="caption">GV西语站</p>
 		</li>
 		<li>
-			<img src="<?php echo C('f-img');?>/2.jpg" alt="">
+			<a href="" target="_blank"><img src="<?php echo C('f-img');?>/2.jpg" alt=""></a>
 			<p class="caption">GV葡语站</p>
 		</li>
 		<li>
-			<img src="<?php echo C('f-img');?>/3.jpg" alt="">
+			<a href="" target="_blank"><img src="<?php echo C('f-img');?>/3.jpg" alt=""></a>
 			<p class="caption">TOMREPAIR</p>
 		</li>
 	</ul>
 </div>
 
 <!--四个圈-->
-	<h2 class="warp_h2">跃飞，不止是一家网站建设公司<span>我们信仰并一直坚持，为客户打造真正有价值的互联网平台</span><b>详情致电：<a href="tel:18929329587" id="phone2">18929329587</a></b></h2>
+<h2 class="warp_h2">跃飞，不止是一家网站建设公司<span>我们信仰并一直坚持，为客户打造真正有价值的互联网平台</span><b>详情致电：<a href="tel:18929329587" id="phone2">18929329587</a></b></h2>
 <div class="warp">
 	<ul>
-<li class="">	
-<a>
-<div class="tu">
-<img src="<?php echo C('f-img');?>/103035690d561f3b8-c.jpg" alt="#">
-<div class="light"></div>
-</div>
-<h2>高端品牌网站定制</h2>
-<p>
-	<i>基于web的品牌表现</i> <i>社会化媒体整合</i> <i>品牌web视觉规范</i></p>
-</a>
-</li><li class="">	
-<a>
-<div class="tu">
-<img src="<?php echo C('f-img');?>/1030551997ad43bf9-6.jpg" alt="#">
-<div class="light"></div>
-</div>
-<h2>移动互联网解决方案</h2>
-<p>
-	<i>微信、APP、WAP网站</i> <i>响应式web设计</i></p>
-</a>
-</li><li class="">	
-<a>
-<div class="tu">
-<img src="<?php echo C('f-img');?>/1031593800f5386a-7.jpg" alt="#">
-<div class="light"></div>
-</div>
-<h2>复杂系统开发定制</h2>
-<p>
-	<i>拥有双软认证的CMS系统</i> <i>大型站群及定制电商平台开发</i></p>
-</a>
-</li><li class="li4">	
-<a>
-<div class="tu">
-<img src="<?php echo C('f-img');?>/103127334adab3be1-9.jpg" alt="#">
-<div class="light"></div>
-</div>
-<h2>用户体验优化</h2>
-<p>
-	<i>用户调研分析</i> <i>组织、流程、交互梳理</i> <i>UE、UI输出</i> <i>用户体验测试调研</i></p>
-</a>
-</li>
-    	
-    </ul>
+		<li class="">
+			<a>
+				<div class="tu">
+					<img src="<?php echo C('f-img');?>/103035690d561f3b8-c.jpg" alt="#">
+					<div class="light"></div>
+				</div>
+				<h2>高端品牌网站定制</h2>
+				<p>
+					<i>基于web的品牌表现</i> <i>社会化媒体整合</i> <i>品牌web视觉规范</i></p>
+			</a>
+		</li><li class="">
+			<a>
+				<div class="tu">
+					<img src="<?php echo C('f-img');?>/1030551997ad43bf9-6.jpg" alt="#">
+					<div class="light"></div>
+				</div>
+				<h2>移动互联网解决方案</h2>
+				<p>
+					<i>微信、APP、WAP网站</i> <i>响应式web设计</i></p>
+			</a>
+		</li><li class="">
+			<a>
+				<div class="tu">
+					<img src="<?php echo C('f-img');?>/1031593800f5386a-7.jpg" alt="#">
+					<div class="light"></div>
+				</div>
+				<h2>复杂系统开发定制</h2>
+				<p>
+					<i>拥有双软认证的CMS系统</i> <i>大型站群及定制电商平台开发</i></p>
+			</a>
+		</li><li class="li4">
+			<a>
+				<div class="tu">
+					<img src="<?php echo C('f-img');?>/103127334adab3be1-9.jpg" alt="#">
+					<div class="light"></div>
+				</div>
+				<h2>用户体验优化</h2>
+				<p>
+					<i>用户调研分析</i> <i>组织、流程、交互梳理</i> <i>UE、UI输出</i> <i>用户体验测试调研</i></p>
+			</a>
+		</li>
+
+	</ul>
 </div>
 <!--案例-->
 <div class="warp_list" id="al">
-<ul class="list">
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '中国银行'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/1039108518efa3059-2_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/143039420b8fdd58-e.png"></b>
-<div class="tet"><p>
-	<i>用户体验优化UX/UI</i> <i>设计Design</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '天洋'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/105822935e744c775-b_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/10582759821dffaf3-e.png"></b>
-<div class="tet"><p>
-	<i>策略Strategy</i> <i>原型UX/UI</i> <i>设计Design</i><i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '商务印书馆'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/10591454ca83d5d8-6_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/105919198a5110b5-d.png"></b>
-<div class="tet"><p>
-	<i>策略Strategy</i> <i>原型UX/UI</i> <i>设计Design</i><i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '忆恒创源'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/111697193230b61-e_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/11110505b8349aaa-8.png"></b>
-<div class="tet"><p>
-	<i>策略Strategy</i> <i>设计Design</i> <i>视差滚动Parallax Scrolling</i><i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-<li class="li5">
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '国旅-意大利'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/112579022b271637-d_Cut952421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/1132782c2c272c1-a.png"></b>
-<div class="tet"><p>
-	<i>策略Strategy</i> <i>原型UX/UI</i> <i>响应式设计Responsive Web Design</i><i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '北汽现代'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/11330359db777bff-7_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/11358429f0f4fba-b.png"></b>
-<div class="tet"><p>
-	<i>原型UX/UI</i> <i>设计Design</i> <i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '国防部'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/1141456518acb31f-d_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/114319163bba7c5-9.png"></b>
-<div class="tet"><p>
-	<i>原型UX/UI</i> <i>设计Design</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '厕所'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/1158801f29b0820-4_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/11513158b354398e-2.png"></b>
-<div class="tet"><p>
-	<i>策略Strategy</i> <i>原型UX/UI</i> <i>设计Design</i><i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '曾卫平商业设计'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/11540893d860bf7f-4_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/11546194bab52937-3.png"></b>
-<div class="tet"><p>
-	<i>策略Strategy</i> <i>原型UX/UI</i> <i>响应式设计Responsive Web Design</i><i>视频化背景 Video Background</i><i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '华电'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/11621496d1c78d52-0_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/11624874d657a034-a.png"></b>
-<div class="tet"><p>
-	<i>策略Strategy</i> <i>原型UX/UI</i> <i>设计Design</i><i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-<li>
-<a href="javascript:void(0);" onclick="_hmt.push(['_trackEvent', 'in_case', 'click', '航港发展'])" target="_blank">
-<img class="tu" src="<?php echo C('f-img');?>/11650381123f908c-4_Cut476421.jpg" alt="#">
-<div class="hg">
-<b><img src="<?php echo C('f-img');?>/1165768402b629f1-d.png"></b>
-<div class="tet"><p>
-	<i>策略Strategy</i> <i>原型UX/UI</i> <i>响应式设计Responsive Web Design</i><i>开发Development</i></p>
-</div></div>
-</a>
-</li>
-</ul>
+	<ul class="list">
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/1039108518efa3059-2_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/143039420b8fdd58-e.png"></b>
+					<div class="tet"><p>
+							<i>用户体验优化UX/UI</i> <i>设计Design</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/105822935e744c775-b_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/10582759821dffaf3-e.png"></b>
+					<div class="tet"><p>
+							<i>策略Strategy</i> <i>原型UX/UI</i> <i>设计Design</i><i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/10591454ca83d5d8-6_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/105919198a5110b5-d.png"></b>
+					<div class="tet"><p>
+							<i>策略Strategy</i> <i>原型UX/UI</i> <i>设计Design</i><i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/111697193230b61-e_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/11110505b8349aaa-8.png"></b>
+					<div class="tet"><p>
+							<i>策略Strategy</i> <i>设计Design</i> <i>视差滚动Parallax Scrolling</i><i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li class="li5">
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/112579022b271637-d_Cut952421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/1132782c2c272c1-a.png"></b>
+					<div class="tet"><p>
+							<i>策略Strategy</i> <i>原型UX/UI</i> <i>响应式设计Responsive Web Design</i><i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/11330359db777bff-7_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/11358429f0f4fba-b.png"></b>
+					<div class="tet"><p>
+							<i>原型UX/UI</i> <i>设计Design</i> <i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/1141456518acb31f-d_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/114319163bba7c5-9.png"></b>
+					<div class="tet"><p>
+							<i>原型UX/UI</i> <i>设计Design</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/1158801f29b0820-4_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/11513158b354398e-2.png"></b>
+					<div class="tet"><p>
+							<i>策略Strategy</i> <i>原型UX/UI</i> <i>设计Design</i><i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/11540893d860bf7f-4_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/11546194bab52937-3.png"></b>
+					<div class="tet"><p>
+							<i>策略Strategy</i> <i>原型UX/UI</i> <i>响应式设计Responsive Web Design</i><i>视频化背景 Video Background</i><i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/11621496d1c78d52-0_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/11624874d657a034-a.png"></b>
+					<div class="tet"><p>
+							<i>策略Strategy</i> <i>原型UX/UI</i> <i>设计Design</i><i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+		<li>
+			<a href="javascript:void(0);">
+				<img class="tu" src="<?php echo C('f-img');?>/11650381123f908c-4_Cut476421.jpg" alt="#">
+				<div class="hg">
+					<b><img src="<?php echo C('f-img');?>/1165768402b629f1-d.png"></b>
+					<div class="tet"><p>
+							<i>策略Strategy</i> <i>原型UX/UI</i> <i>响应式设计Responsive Web Design</i><i>开发Development</i></p>
+					</div></div>
+			</a>
+		</li>
+	</ul>
 </div>
 <div class="clear"></div>
 <!--案例LOGO-->
 <div class="list_logo">
-<div class="tet">
-<div class="warp_tet">
-<div class="clear"></div>
-<b><img src="<?php echo C('f-img');?>/1046427223a4ee80d-2.jpg" alt="#"><a class="a1"></a><a class="a2"></a><a class="a3"></a></b><p>
-	早在1998年，我们就开始设计网站。18年来，我们追求并一直坚持，为客户打造适合的真正有价值的互联网平台。 
-认真聆听客户的思想，追求在战略理解上与客户同步；精心制定落地的计划，雕琢每一个面向用户的细节。 
-我们对网站策划、用户体验与互动、视觉传达、前后台应用系统、国际化标准和流行趋势、进行不断的研究和实践，拥有丰富的经验和理念。</p>
-</div>
-</div>
+	<div class="tet">
+		<div class="warp_tet">
+			<div class="clear"></div>
+			<b><img src="<?php echo C('f-img');?>/1046427223a4ee80d-2.jpg" alt="#"><a class="a1"></a><a class="a2"></a><a class="a3"></a></b><p>
+				早在2009年，我们就开始设计网站。8年来，我们追求并一直坚持，为客户打造适合的真正有价值的互联网平台。
+				认真聆听客户的思想，追求在战略理解上与客户同步；精心制定落地的计划，雕琢每一个面向用户的细节。
+				我们对网站策划、用户体验与互动、视觉传达、前后台应用系统、国际化标准和流行趋势、进行不断的研究和实践，拥有丰富的经验和理念。</p>
+		</div>
+	</div>
 
+<!--	合作客户公司网站logo-->
 	<ul>
+		<?php foreach ($smallLogo as $k=>$v):?>
 		<li>
 			<div class="tu">
 				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
 					<tbody>
 					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/10396736b83110d6-e.jpg" alt="网站公司" /></td>
+						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/<?php echo $v;?>" alt="网站公司" /></td>
 					</tr>
 					</tbody>
 				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/105818942b3e214c7-b.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1059936c0d3bc61-8.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1112243acd4a481-7.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/112492782f28493f-b.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11324698fa8fb714-4.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/114111537927a32d-d.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/14221663126072d49-1.png" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11537658468e5e25-2.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/116179159588ca64-0.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1164748f1e48407-b.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1172076627b8f447-7.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11742604e36fd224-c.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1175644829d58900-2.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11872269afe7503-e.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1181629308349695-6.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1182594908902b45-3.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1183630f2d27e70-d.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1184579369874b05-8.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11857768cd3bc558-9.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/1198325c24dcbee-0.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11921535a2884e26-6.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11932926a731626a-4.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11945130b8b5e895-c.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11101343083a9bf9-9.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/11108873cf413244-b.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
-		<li>
-			<div class="tu">
-				<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
-					<tbody>
-					<tr>
-						<td align="center" valign="middle"><img src="<?php echo C('f-img');?>/111018760580ae4c3-e.jpg" alt="网站公司" /></td>
-					</tr>
-					</tbody>
-				</table>
-			</div></li>
+			</div>
+		</li>
+	<?php endforeach;?>
 	</ul>
 
 </div>
-<?php include '/App/Home/View/Layout/footer.phtml';?>
+<?php include "/App/Home/View/Layout/footer.phtml";?>
 </body>
 </html>
