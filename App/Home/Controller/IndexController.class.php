@@ -3,6 +3,11 @@ namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller
 {
+    public function _empty()
+    {
+        $this->redirect('Home/Index/index');
+    }
+
     public function index()
     {
         //合作用户logo
