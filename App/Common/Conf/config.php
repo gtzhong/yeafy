@@ -11,6 +11,6 @@ return array(
     'f-css'=> $website.'/assets/home/css',
     'f-js'=> $website. '/assets/home/js',
     'f-img'=>$website. '/assets/home/images',
-    'URL_MODEL'             =>  0,
+    'URL_MODEL'             =>  3,
 
 );
