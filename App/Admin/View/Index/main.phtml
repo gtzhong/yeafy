@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><?php echo C('shopName');?></title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="{:C('css')}/general.css" rel="stylesheet" type="text/css" />
+<link href="{:C('css')}/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>
+    <span class="action-span1"><a href="<?php echo U("Admin/Index/index")?>"><?php echo C('shopName');?></a> </span>
+    <span id="search_id" class="action-span1"></span>
+    <div style="clear:both"></div>
+</h1>
+<!-- start system information -->
+<div class="list-div">
+    <table cellspacing='1' cellpadding='3'>
+        <tr>
+            <th colspan="4" class="group-title">系统信息</th>
+        </tr>
+        <tr>
+            <td width="20%">服务器操作系统:</td>
+            <td width="30%"><?php echo PHP_OS;?></td>
+            <td width="20%">Web 服务器:</td>
+            <td width="30%"><?php echo $_SERVER['SERVER_SOFTWARE'];?></td>
+        </tr>
+        <tr>
+            <td>PHP 版本:</td>
+            <td><?php echo PHP_VERSION; ?></td>
+            <td>MySQL 版本:</td>
+            <td><?php echo mysql_get_server_info() ?></td>
+        </tr>
+        <tr>
+            <td>安全模式:</td>
+            <td><?php echo (boolean) ini_get('safe_mode') ?'是':'否';?></td>
+            <td>安全模式GID:</td>
+            <td><?php echo (boolean) ini_get('safe_mode_gid') ?'是':'否';?></td>
+        </tr>
+        <tr>
+            <td>Socket 支持:</td>
+            <td><?php echo function_exists('fsockopen') ?'是':'否';?></td>
+            <td>时区设置:</td>
+            <td><?php echo  date_default_timezone_get();?></td>
+        </tr>
+        <tr>
+            <td>GD 版本:</td>
+            <td>GD2 ( JPEG GIF PNG)</td>
+            <td>Zlib 支持:</td>
+            <td><?php echo function_exists('gzclose')?'是':'否';?></td>
+        </tr>
+        <tr>
+            <td>服务器域名/IP:</td>
+            <td><?php echo $_SERVER['SERVER_NAME'];?>[<?php echo $_SERVER['SERVER_ADDR'];?>]</td>
+            <td>文件上传的最大大小:</td>
+            <td><?php echo get_cfg_var ("upload_max_filesize")?get_cfg_var ("upload_max_filesize"):"不允许上传附件"; ?></td>
+        </tr>
+    </table>
+</div>
+<br />
+<div class="list-div">
+    <table cellspacing='1' cellpadding='3'>
+        <tr>
+            <th colspan="4" class="group-title">开发者个人信息</th>
+        </tr>
+        <tr>
+            <td width="20%">QQ:</td>
+            <td width="30%">845272922</td>
+            <td width="20%">微信:</td>
+            <td width="30%">gt845272922</td>
+        </tr>
+        <tr>
+            <td width="20%">作品展示网站:</td>
+            <td width="30%"><a href="http://www.yeafy.com" target="_blank">http://www.yeafy.com</a></td>
+            <td width="20%">爱好:</td>
+            <td width="30%">网站架构设计、炒股</td>
+        </tr>
+    </table>
+</div>
+<?php include_once "/assets/template/footer.php";?>
+</body>
+</html>
