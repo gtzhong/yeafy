@@ -20,6 +20,7 @@ return array(
     'f-js'=> $website. '/assets/home/js',
     'f-img'=>$website. '/assets/home/images',
     'URL_MODEL'             =>  1,
+    'ueditor'=> $website.'/assets/ueditor', //百度编辑器
     'jq-ui' => $website.'/assets/jquery-ui', //jquery-ui插件
 
     'css'=> $website.'/assets/admin/styles', //配置后台css
