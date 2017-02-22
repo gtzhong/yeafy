@@ -10,6 +10,7 @@ return array(
     'menu'=>array(
         '系统设置'=>array(
             '系统设置' =>array('User','comment'),
+            '管理员列表'=>array('AdminMember','lst'),
         ),
         '广告管理'=>array(
             '广告列表'=>array('Ad','lst'),
