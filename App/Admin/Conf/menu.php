@@ -9,7 +9,7 @@
 return array(
     'menu'=>array(
         '系统设置'=>array(
-            '系统设置' =>array('User','comment'),
+            '系统配置' =>array('Config','save'),
             '管理员列表'=>array('AdminMember','lst'),
         ),
         '广告管理'=>array(

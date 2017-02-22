@@ -28,6 +28,10 @@ class AdminController extends Controller
     {
         // 必须先调用父类的构造函数
         parent::__construct();
+        /*设置数据库配置*/
+        $configModel = D('Config');
+        $configModel->setConfig();
+
         if(!session('?userId'))
         {
             // 从cookie中取出用户名和密码
