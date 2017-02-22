@@ -8,6 +8,14 @@ class IndexController extends Controller
         $this->redirect('Home/Index/index');
     }
 
+    public function __construct()
+    {
+        parent::__construct();
+        /*设置数据库配置*/
+        $configModel = D('Admin/Config');
+        $configModel->setConfig();
+    }
+
     public function index()
     {
         //合作用户logo
@@ -45,6 +53,10 @@ class IndexController extends Controller
         $this->assign('companyPhoto',$arr['companyPhoto']);
         $this->assign('menu',$arr['menu']);
         $this->assign('smallLogo',$smallLogo);
+        //首页广告图
+        $adModel = D('Admin/Ad');
+        $ad = $adModel->getIndexSlideAd();
+        $this->assign('ad', $ad);
         $this->display();
     }
     
