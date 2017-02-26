@@ -13,7 +13,7 @@
     <a href="#" class="logo"><img src="<?php echo C('f-img');?>/logo.png"></a>
     <div class="nav">
         <?php foreach ($menu as $k=>$v):?>
-            <a href="<?php echo U($v['url']);?>"><?php echo $v['text'];?></a>
+            <a href="<?php echo UU($v['url']);?>"><?php echo $v['text'];?></a>
         <?php endforeach;?>
     </div>
     <div class="phone"><b><img src="<?php echo C('f-img');?>/phone.png" alt="做网站:<?php echo C('Phone');?>"></b><span id="phone1"><?php echo C('Phone');?></span></div>
